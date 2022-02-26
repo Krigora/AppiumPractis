@@ -1,3 +1,5 @@
+package tests;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -22,7 +24,7 @@ public class FirstAppiumTest {
         URL url = new URL("http://localhost:4723/wd/hub");
         driver = new AndroidDriver<MobileElement>(url, capabilities);
         Thread.sleep(3000);
-      //  driver.closeApp();
+       driver.closeApp();
 
     }
 }
